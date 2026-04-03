@@ -18,93 +18,44 @@
       justify-content: center;
       padding: 2rem;
     }
-    .container {
-      max-width: 680px;
-      text-align: center;
-    }
+    .container { max-width: 720px; text-align: center; }
     .mark {
-      width: 80px;
-      height: 80px;
+      width: 80px; height: 80px;
       border: 3px solid #e8e8e8;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 2.5rem;
-      font-size: 1.8rem;
-      font-weight: 300;
-      letter-spacing: 2px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 1.8rem; font-weight: 300; letter-spacing: 2px;
     }
-    h1 {
-      font-size: 2.4rem;
-      font-weight: 300;
-      letter-spacing: -0.5px;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-    }
-    .tagline {
-      font-size: 1.1rem;
-      color: #999;
-      margin-bottom: 2.5rem;
-      line-height: 1.6;
-    }
-    .lanes {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-bottom: 3rem;
-      text-align: left;
-    }
-    .lane {
-      padding: 1.2rem;
-      border: 1px solid #222;
-      border-radius: 8px;
-    }
-    .lane h3 {
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.4rem;
-      color: #fff;
-    }
-    .lane p {
-      font-size: 0.85rem;
-      color: #777;
-      line-height: 1.4;
-    }
-    .cta {
-      margin-bottom: 2rem;
-    }
+    h1 { font-size: 2.4rem; font-weight: 300; letter-spacing: -0.5px; margin-bottom: 0.5rem; line-height: 1.2; }
+    .initiative { font-size: 0.9rem; color: #777; margin-bottom: 2rem; font-style: italic; }
+    .tagline { font-size: 1.05rem; color: #999; margin-bottom: 2.5rem; line-height: 1.7; }
+    .lanes { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2.5rem; text-align: left; }
+    .lane { padding: 1.2rem; border: 1px solid #222; border-radius: 8px; }
+    .lane h3 { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.4rem; color: #fff; }
+    .lane p { font-size: 0.85rem; color: #777; line-height: 1.4; }
+    .status { margin-bottom: 2.5rem; padding: 1rem 1.5rem; border: 1px solid #1a3a1a; border-radius: 8px; background: #0d1a0d; }
+    .status h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #4a8; margin-bottom: 0.5rem; }
+    .status p { font-size: 0.85rem; color: #777; line-height: 1.5; }
+    .cta { margin-bottom: 1.5rem; }
     .cta a {
-      display: inline-block;
-      padding: 0.9rem 2.4rem;
-      border: 1px solid #e8e8e8;
-      color: #e8e8e8;
-      text-decoration: none;
-      font-size: 0.95rem;
-      letter-spacing: 0.5px;
-      border-radius: 4px;
-      transition: all 0.2s;
+      display: inline-block; padding: 0.9rem 2.4rem;
+      border: 1px solid #e8e8e8; color: #e8e8e8;
+      text-decoration: none; font-size: 0.95rem; letter-spacing: 0.5px;
+      border-radius: 4px; transition: all 0.2s;
     }
-    .cta a:hover {
-      background: #e8e8e8;
-      color: #0a0a0a;
-    }
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.8rem;
-      color: #555;
-    }
-    .footer a {
-      color: #777;
-      text-decoration: none;
-    }
-    .location {
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 0.5rem;
-    }
+    .cta a:hover { background: #e8e8e8; color: #0a0a0a; }
+    .contact-row { margin-bottom: 2rem; }
+    .contact-row a { color: #999; text-decoration: none; font-size: 0.85rem; margin: 0 0.75rem; }
+    .contact-row a:hover { color: #fff; }
+    .leadership { margin-bottom: 2.5rem; text-align: left; padding: 1.2rem; border: 1px solid #222; border-radius: 8px; }
+    .leadership h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 0.8rem; }
+    .leader { font-size: 0.85rem; color: #777; margin-bottom: 0.3rem; }
+    .leader strong { color: #ccc; }
+    .location { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
+    .footer { margin-top: 2rem; font-size: 0.8rem; color: #555; }
+    .footer a { color: #777; text-decoration: none; }
+    .ein { font-size: 0.75rem; color: #444; margin-top: 0.5rem; }
     @media (max-width: 500px) {
       .lanes { grid-template-columns: 1fr; }
       h1 { font-size: 1.8rem; }
@@ -115,6 +66,7 @@
   <div class="container">
     <div class="mark">HS</div>
     <h1>Human Systems Foundation</h1>
+    <p class="initiative">The Human Systems Project is an initiative of Human Systems Foundation.</p>
     <p class="tagline">Delivering workforce development, behavioral health, youth empowerment, and community technology programs for underserved communities through structured human performance and systems-based interventions.</p>
     <div class="lanes">
       <div class="lane">
@@ -134,13 +86,27 @@
         <p>AI literacy, digital inclusion, and responsible technology access for communities.</p>
       </div>
     </div>
+    <div class="status">
+      <h3>Entity Status</h3>
+      <p>California Nonprofit Public Benefit Corporation. Filed April 2026. EIN 41-5294298. 501(c)(3) determination pending. SAM.gov registration in progress.</p>
+    </div>
+    <div class="leadership">
+      <h3>Leadership</h3>
+      <div class="leader"><strong>Arthur Palyan</strong> - President</div>
+      <div class="leader"><strong>Luis Sanchez</strong> - Secretary</div>
+      <div class="leader"><strong>Anthony Gonzalez</strong> - Treasurer</div>
+    </div>
     <div class="cta">
       <a href="mailto:info@humansystemsfoundation.org">Get in Touch</a>
+    </div>
+    <div class="contact-row">
+      <a href="mailto:info@humansystemsfoundation.org">info@humansystemsfoundation.org</a>
+      <a href="tel:+18184399770">(818) 439-9770</a>
     </div>
     <p class="location">Burbank, CA</p>
     <div class="footer">
       <p>Human Systems Foundation is a California nonprofit public benefit corporation.</p>
-      <p style="margin-top: 0.5rem">501(c)(3) status pending.</p>
+      <p class="ein">EIN: 41-5294298</p>
     </div>
   </div>
 </body>
