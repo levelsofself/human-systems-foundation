@@ -77,6 +77,22 @@
       .lanes { grid-template-columns: 1fr; }
       h1 { font-size: 1.8rem; }
     }
+
+    .donate { margin-bottom: 2.5rem; padding: 1.5rem; border: 1px solid #1a2a1a; border-radius: 8px; background: #0d1a0d; text-align: left; }
+    .donate h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #4a8; margin-bottom: 1rem; }
+    .donate p { font-size: 0.85rem; color: #888; line-height: 1.7; margin-bottom: 0.8rem; }
+    .donate-options { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+    .donate-option { padding: 1.2rem; border: 1px solid #222; border-radius: 8px; text-align: center; background: #111; }
+    .donate-option h4 { font-size: 0.85rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .donate-option p { font-size: 0.8rem; color: #666; margin-bottom: 0.8rem; }
+    .donate-option .xrp-address { font-size: 0.7rem; color: #4a8; word-break: break-all; background: #0a0a0a; padding: 0.5rem; border-radius: 4px; margin: 0.5rem 0; font-family: monospace; cursor: pointer; border: 1px solid #1a3a1a; }
+    .donate-option .xrp-address:hover { border-color: #4a8; }
+    .donate-option .copy-note { font-size: 0.7rem; color: #555; }
+    .donate-option a.donate-btn { display: inline-block; padding: 0.6rem 1.8rem; border: 1px solid #4a8; color: #4a8; text-decoration: none; font-size: 0.85rem; border-radius: 4px; transition: all 0.2s; margin-top: 0.3rem; }
+    .donate-option a.donate-btn:hover { background: #4a8; color: #0a0a0a; }
+    .donate .receipt-note { font-size: 0.75rem; color: #555; margin-top: 1rem; border-top: 1px solid #1a1a1a; padding-top: 0.8rem; }
+    .donate .receipt-note a { color: #4a8; text-decoration: underline; }
+    @media (max-width: 500px) { .donate-options { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -132,6 +148,32 @@
       <h3>Entity Status</h3>
       <p>California Nonprofit Public Benefit Corporation. Approved by California Secretary of State, April 2026 (Entity No. B20260159908). EIN 41-5294298. 501(c)(3) determination pending. SAM.gov registration in progress.</p>
     </div>
+
+    <div class="donate">
+      <h3>Support Our Work</h3>
+      <p>Your contribution funds pilot programs in workforce development, youth empowerment, and community behavioral health across Los Angeles County.</p>
+      <div class="donate-options">
+        <div class="donate-option">
+          <h4>Card / Apple Pay</h4>
+          <p>Donate via Stripe</p>
+          <!-- STRIPE BUY BUTTON: Replace buy-button-id and publishable-key with real values -->
+          <!-- <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+          <stripe-buy-button
+            buy-button-id="REPLACE_WITH_BUY_BUTTON_ID"
+            publishable-key="REPLACE_WITH_PUBLISHABLE_KEY"
+          ></stripe-buy-button> -->
+          <a class="donate-btn" href="mailto:info@humansystemsfoundation.org?subject=Donation%20Inquiry">Coming Soon</a>
+        </div>
+        <div class="donate-option">
+          <h4>Donate with XRP</h4>
+          <p>Send directly to our wallet</p>
+          <!-- REPLACE with real XRP address from Xaman wallet -->
+          <div class="xrp-address" onclick="navigator.clipboard.writeText(this.innerText).then(()=>{this.style.borderColor='#6c6';setTimeout(()=>this.style.borderColor='#1a3a1a',1500)})" title="Click to copy">WALLET_ADDRESS_PENDING</div>
+          <p class="copy-note">Click address to copy</p>
+        </div>
+      </div>
+      <p class="receipt-note">For a donation receipt, please email <a href="mailto:info@humansystemsfoundation.org">info@humansystemsfoundation.org</a> with your name, transaction hash, and amount. Cryptocurrency donations are treated as in-kind gifts of property per IRS guidelines. Human Systems Foundation (EIN 41-5294298) -- 501(c)(3) determination pending.</p>
+    </div>
     <div class="leadership">
       <h3>Leadership</h3>
       <div class="leader"><strong>Arthur Palyan</strong> - President</div>
@@ -150,4 +192,4 @@
     </div>
   </div>
 </body>
-</html>
+</html>HTMLEOF
