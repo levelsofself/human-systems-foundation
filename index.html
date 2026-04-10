@@ -73,6 +73,9 @@
     .location { font-size: 0.85rem; color: #666; margin-bottom: 0.5rem; }
     .footer { margin-top: 2rem; font-size: 0.8rem; color: #555; }
     .footer a { color: #777; text-decoration: none; }
+    .share-row { display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.8rem; flex-wrap: wrap; }
+    .share-row a { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.35rem 0.7rem; border: 1px solid #333; border-radius: 4px; color: #888; text-decoration: none; font-size: 0.7rem; transition: all 0.2s; }
+    .share-row a:hover { border-color: #4a8; color: #4a8; }
     @media (max-width: 500px) {
       .lanes { grid-template-columns: 1fr; }
       h1 { font-size: 1.8rem; }
@@ -171,6 +174,11 @@
           <!-- REPLACE with real XRP address from Xaman wallet -->
           <div class="xrp-address" onclick="navigator.clipboard.writeText(this.innerText).then(()=>{this.style.borderColor='#6c6';setTimeout(()=>this.style.borderColor='#1a3a1a',1500)})" title="Click to copy">rNYb4icdK1EfKVMMvjiX2jhvBes3iavF6w</div>
           <p class="copy-note">Click address to copy</p>
+          <div class="share-row">
+            <a href="https://twitter.com/intent/tweet?text=Support%20Human%20Systems%20Foundation%20-%20now%20accepting%20XRP%20donations%20for%20workforce%20development%2C%20youth%20empowerment%2C%20and%20community%20health.&url=https%3A%2F%2Fhumansystemsfoundation.org" target="_blank" rel="noopener">Share on X</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fhumansystemsfoundation.org" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://wa.me/?text=Support%20Human%20Systems%20Foundation%20-%20now%20accepting%20XRP%20donations%20for%20workforce%20development%2C%20youth%20empowerment%2C%20and%20community%20health.%20https%3A%2F%2Fhumansystemsfoundation.org" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
         </div>
       </div>
       <p class="receipt-note">Human Systems Foundation can acknowledge receipt of cryptocurrency donations. To receive an acknowledgment, email <a href="mailto:info@humansystemsfoundation.org">info@humansystemsfoundation.org</a> with your name, transaction hash, donation amount, and date. Minimum XRP donation: 20 XRP. Network fees are the donor's responsibility. Please consult your tax advisor regarding deductibility and valuation. EIN 41-5294298. 501(c)(3) determination pending.</p>
