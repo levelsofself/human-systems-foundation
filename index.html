@@ -174,11 +174,17 @@
       <div class="donate-options">
         <div class="donate-option" style="border-color:#2a4a2a; background:#0f1a0f;">
           <h4>Card / Apple Pay</h4>
-          <p>Secure one-time card and Apple Pay giving. You will receive an emailed receipt.</p>
+          <p>Secure card and Apple Pay giving, one-time or monthly. You will receive an emailed receipt.</p>
           
           <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+          <p style="margin:0.85rem 0 0.3rem; font-size:0.78rem; color:#8db58d; text-transform:uppercase; letter-spacing:0.06em;">Give once</p>
           <stripe-buy-button
             buy-button-id="buy_btn_1TmlGnCS2WoaeZLZUKNfCfIs"
+            publishable-key="pk_live_51TmhYuCS2WoaeZLZJyjU0IewB8AXOYGywmxTOdOekuNroJ0sJFWMvwPaly94BxkGNVmVMkENm26mk88TSjJflZZ8002XXuhI7T"
+          ></stripe-buy-button>
+          <p style="margin:1.1rem 0 0.3rem; font-size:0.78rem; color:#8db58d; text-transform:uppercase; letter-spacing:0.06em;">Give monthly</p>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1TmlZyCS2WoaeZLZM2OWook3"
             publishable-key="pk_live_51TmhYuCS2WoaeZLZJyjU0IewB8AXOYGywmxTOdOekuNroJ0sJFWMvwPaly94BxkGNVmVMkENm26mk88TSjJflZZ8002XXuhI7T"
           ></stripe-buy-button>
           
